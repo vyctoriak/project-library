@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/302159e508.js" crossorigin="anonymous"></script>
+  <title>Project: Library</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>Welcome to the Library <i class="fa-solid fa-book-bookmark"></i></h1>
+
+      <p>See below the list of books you added</p>
+      <div id="library"></div>
+
+      <a id="addNewBook" class="addNewBook" href="#"><i class="fa-sharp fa-solid fa-plus"></i> Add a new book</a>
+
+      <div class="books-container">
+
+
+        <div id="modalAddBook" class="modalAddBook">
+          <h3>Please fill the form with the book informations <i class="fa-solid fa-book"></i></h3>
+          <form id="bookForm">
+            <label for="title">Title:</label>
+            <input id="title" type="text" placeholder="What's the title?">
+
+            <label for="author">Author:</label>
+            <input id="author" type="text" placeholder="Who's the author?">
+
+            <label for="pages">Pages:</label>
+            <input id="pages" type="number" placeholder="How many pages?">
+
+            <div class="booleanRead">
+              <label for="read">Read:</label>
+              <input id="read" type="checkbox">
+            </div>
+
+            <button class="addBookModalButton" id="addBookModal" type="submit">Add book to your library
+              📚</button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src=" main.js"></script>
+</body>
+
+</html>

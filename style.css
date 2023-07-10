@@ -1,0 +1,107 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #545454;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+main .container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addNewBook {
+  border: 1px solid;
+  background-color: burlywood;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.addNewBook:hover {
+  background-color: rgb(128, 111, 87);
+}
+
+/* modal add new book */
+
+.modalAddBook {
+  display: none;
+  background-color: darkkhaki;
+  color: #FFF;
+  font-weight: 600;
+  padding: 1.5rem;
+  border-radius: 6px;
+
+  position: fixed;
+  top: 20%;
+  right: 40%;
+}
+
+.modalAddBook form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modalAddBook button {
+  border: 1px solid;
+  background-color: burlywood;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#closeModal {
+  cursor: pointer;
+}
+
+/* Library Container */
+
+#library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Book Card */
+
+.bookCard {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.remove {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.toggleRead {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+  font-weight: 600;
+  text-transform: uppercase;
+}
