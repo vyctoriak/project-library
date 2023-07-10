@@ -29,17 +29,17 @@
           <h3>Please fill the form with the book informations <i class="fa-solid fa-book"></i></h3>
           <form id="bookForm">
             <label for="title">Title:</label>
-            <input id="title" type="text" placeholder="What's the title?">
+            <input id="title" type="text" placeholder="What's the title?" required>
 
             <label for="author">Author:</label>
-            <input id="author" type="text" placeholder="Who's the author?">
+            <input id="author" type="text" placeholder="Who's the author?" required>
 
             <label for="pages">Pages:</label>
             <input id="pages" type="number" placeholder="How many pages?">
 
             <div class="booleanRead">
               <label for="read">Read:</label>
-              <input id="read" type="checkbox">
+              <input id="read" type="checkbox" required>
             </div>
 
             <button class="addBookModalButton" id="addBookModal" type="submit">Add book to your library
